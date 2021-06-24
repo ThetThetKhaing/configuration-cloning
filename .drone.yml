@@ -6,6 +6,11 @@ clone:
   disable: true
 
 steps:
+- name: fetch
+  image: alpine/git
+  commands:
+  - git fetch --tags
+
 - name: clone
   image: alpine/git
   commands:
