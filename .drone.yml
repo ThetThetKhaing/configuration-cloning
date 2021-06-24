@@ -10,9 +10,3 @@ steps:
   image: alpine/git
   commands:
   - git fetch --tags
-
-- name: clone
-  image: alpine/git
-  commands:
-  - git clone https://github.com/octocat/hello-world.git .
-  - git checkout test
